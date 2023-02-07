@@ -1,0 +1,23 @@
+#Your bot token
+Bot Token: OTI1NTA0NTk0MzI5NjIwNTUx.YcuFUg.hYi0UOiPmmMmsSehsEwHSL1CpTo
+
+#The prifix used for bot commands.
+Prefix: "-/"
+
+#The playing status, I use it to display the help command for my bot, but you can put anything here
+Playing Status: "{prefix}help for commands. Contact Jea#1423 if you need anything."
+
+#The channel all the debugging/logging messages will be sent to.
+Debug Channel ID: 950860145208983553
+
+#Settings fo the embed the bot makes.
+Embed Settings:
+  #what color the little line before the embed will have.
+  Color:
+    r: 255
+    g: 182
+    b: 180
+  #What text and immage will be displayed at the bottom of the embed.
+  Footer:
+    Text: Bot log
+    Icon URL: https://pbs.twimg.com/profile_images/1560062426590187520/7LJo6BVO_400x400.jpg
