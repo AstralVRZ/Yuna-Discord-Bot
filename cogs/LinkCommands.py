@@ -78,9 +78,4 @@ class LinkCommands(commands.Cog):
 
 def setup(bot):
     bot.add_cog(LinkCommands(bot))
-
-time=datetime.datetime.now()
-bot_log = "%s Loaded Link commands cog\n"
-with open ('bot.log', 'a') as f:
-  f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
 print("Loaded Link commands cog")

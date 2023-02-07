@@ -36,16 +36,8 @@ class Testing(commands.Cog):
         print(f"Added a reaction to a message in channel #{ctx.channel} in server: {ctx.guild}")
         await ctx.send("Pong!")
         print(f"Sent a message in channel #{ctx.channel} in server: {ctx.guild}")
-        bot_log = "%s Issued Ping command\n"
-        with open ('bot.log', 'a') as f:
-            f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
 
 
 def setup(bot):
     bot.add_cog(Testing(bot))
-
-time=datetime.datetime.now()
-bot_log = "%s Loaded testing cog\n"
-with open ('bot.log', 'a') as f:
-  f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
 print("Loaded testing cog")

@@ -27,9 +27,4 @@ class template(commands.Cog):
 
 def setup(bot):
     bot.add_cog(template(bot))
-
-time=datetime.datetime.now()
-bot_log = "%s Loaded template cog\n"
-with open ('bot.log', 'a') as f:
-  f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
 print("Loaded template cog")

@@ -37,9 +37,6 @@ class PrideFlags(commands.Cog):
         print(f"Added a reaction to a message in channel #{ctx.channel} in server: {ctx.guild}")
         await ctx.send("https://tenor.com/view/nonbinary-pride-queer-lgbtqia-lgbtq-gif-21903010")
         print(f"Sent a message in channel #{ctx.channel} in server: {ctx.guild}")
-        bot_log = "%s Issued  Nonbinaryflag command\n"
-        with open ('bot.log', 'a') as f:
-            f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
 
     @bot.command(name="Rainbowflag", aliases=["Prideflag"], help="Rainbow flag")
     async def rainbowflag(self, ctx):
@@ -53,9 +50,6 @@ class PrideFlags(commands.Cog):
         print(f"Added a reaction to a message in channel #{ctx.channel} in server: {ctx.guild}")
         await ctx.send("https://tenor.com/view/gay-pride-flag-non-binary-pride-queer-lgbtqia-gif-21920778")
         print(f"Sent a message in channel #{ctx.channel} in server: {ctx.guild}")
-        bot_log = "%s Issued Rainbowflag command\n"
-        with open ('bot.log', 'a') as f:
-            f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
     
     @bot.command(name="Transflag", aliases=["Trans"], help="Send transflag lol")
     async def transflag(self, ctx):
@@ -69,15 +63,8 @@ class PrideFlags(commands.Cog):
         print(f"Added a reaction to a message in channel #{ctx.channel} in server: {ctx.guild}")
         await ctx.send("https://tenor.com/view/trans-transgender-flag-pride-queer-lgbtqia-gif-21903040")
         print(f"Sent a message in channel #{ctx.channel} in server: {ctx.guild}")
-        bot_log = "%s Issued Transflag command\n"
-        with open ('bot.log', 'a') as f:
-            f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
+
 
 def setup(bot):
     bot.add_cog(PrideFlags(bot))
-
-time=datetime.datetime.now()
-bot_log = "%s Loaded prideflags cog\n"
-with open ('bot.log', 'a') as f:
-  f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
 print("Loaded prideflags cog")

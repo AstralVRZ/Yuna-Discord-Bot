@@ -131,9 +131,4 @@ class Moderation(commands.Cog):
 
 def setup(bot):
     bot.add_cog(Moderation(bot))
-
-time=datetime.datetime.now()
-bot_log = "%s Loaded moderation cog\n"
-with open ('bot.log', 'a') as f:
-  f.write(bot_log % datetime.datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)"))
 print("Loaded moderation cog")
