@@ -1,5 +1,5 @@
 #Your bot token
-Bot Token: 
+Bot Token: Put your token here
 
 #The prifix used for bot commands.
 Prefix: "-/"
@@ -8,7 +8,7 @@ Prefix: "-/"
 Playing Status: "{prefix}help for commands. Contact Jea#1423 if you need anything."
 
 #The channel all the debugging/logging messages will be sent to.
-Debug Channel ID: 950860145208983553
+Debug Channel ID: Put the ID of your logging channel here
 
 #Settings fo the embed the bot makes.
 Embed Settings:
